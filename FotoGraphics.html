@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FotoGraphics</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f7;
+            text-align: center;
+        }
+
+        .header {
+            background-color: white;
+            width: 100%;
+            padding: 15px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+        
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            margin-right: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+        
+        .section {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .section h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .section a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: white;
+            color: black;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .footer {
+            background-color: white;
+            width: 100%;
+            padding: 15px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .footer p {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo" onclick="location.href='index.html'">&#xF8FF;</div>
+        <div class="nav-links">
+            <a href="seite1.html">Seite 1</a>
+            <a href="seite2.html">Seite 2</a>
+            <a href="seite3.html">Seite 3</a>
+        </div>
+    </div>
+
+    <div style="margin-top: 60px;"></div> <!-- Platz für fixe Header -->
+    
+    <div class="section" style="background-image: url('bild1.jpg');">
+        <h1>Erster Abschnitt</h1>
+        <a href="seite1.html">Mehr erfahren</a>
+    </div>
+
+    <div class="section" style="background-image: url('bild2.jpg');">
+        <h1>Zweiter Abschnitt</h1>
+        <a href="seite2.html">Mehr erfahren</a>
+    </div>
+
+    <div class="section" style="background-image: url('bild3.jpg');">
+        <h1>Dritter Abschnitt</h1>
+        <a href="seite3.html">Mehr erfahren</a>
+    </div>
+    
+    <div class="footer">
+        <p>&copy; 2024 - Meine Webseite</p>
+        <div class="footer-links">
+            <a href="info.html">Info</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="datenschutz.html">Datenschutz</a>
+            <a href="impressum.html">Impressum</a>
+        </div>
+    </div>
+</body>
+</html>
